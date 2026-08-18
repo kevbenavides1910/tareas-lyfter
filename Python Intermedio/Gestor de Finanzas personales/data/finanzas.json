@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "name": "color",
+      "color": null
+    },
+    {
+      "name": "comida",
+      "color": "#80ff00"
+    }
+  ],
+  "transactions": [
+    {
+      "title": "pizza",
+      "amount": 8000.0,
+      "category": "comida",
+      "transaction_type": "expense",
+      "date": "17/08/2026"
+    },
+    {
+      "title": "salario",
+      "amount": 100000.0,
+      "category": "color",
+      "transaction_type": "income",
+      "date": "17/08/2026"
+    }
+  ]
+}

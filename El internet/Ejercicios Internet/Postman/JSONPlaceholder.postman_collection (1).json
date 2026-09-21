@@ -1,0 +1,605 @@
+{
+  "info": {
+    "_postman_id": "0832cf1e-703a-4a44-8250-b63301eb248b",
+    "name": "JSONPlaceholder",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58388480",
+    "_collection_link": "https://go.postman.co/collection/58388480-0832cf1e-703a-4a44-8250-b63301eb248b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Obtener publicacion",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/posts/1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Obtener publicacion",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/posts/1",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "posts",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Mon, 21 Sep 2026 01:49:45 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "key": "cache-control",
+              "value": "max-age=43200"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU\""
+            },
+            {
+              "key": "expires",
+              "value": "-1"
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=yQ%2BGeQXvjW3HcVsmYDYj76FwPI07zsD5WHxIrh%2Flq8M%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1786047986\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=yQ%2BGeQXvjW3HcVsmYDYj76FwPI07zsD5WHxIrh%2Flq8M%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1786047986\""
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "vary",
+              "value": "Origin, Accept-Encoding"
+            },
+            {
+              "key": "via",
+              "value": "2.0 heroku-router"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "1000"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "999"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1786048003"
+            },
+            {
+              "key": "age",
+              "value": "16039"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "HIT"
+            },
+            {
+              "key": "content-encoding",
+              "value": "br"
+            },
+            {
+              "key": "cf-ray",
+              "value": "a3e56a4928edb754-IAD"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"userId\": 1,\n  \"id\": 1,\n  \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n  \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Crear Publicacion",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Aprendiendo APIs\",\r\n  \"body\": \"Esta publicación fue enviada desde Postman\",\r\n  \"userId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/posts",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "posts"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Crear Publicacion",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Aprendiendo APIs\",\r\n  \"body\": \"Esta publicación fue enviada desde Postman\",\r\n  \"userId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/posts",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "posts"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Mon, 21 Sep 2026 01:53:34 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "118"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "key": "access-control-expose-headers",
+              "value": "Location"
+            },
+            {
+              "key": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"76-bxA0DzcRQZYOD5Opnx0tcFs+EHA\""
+            },
+            {
+              "key": "expires",
+              "value": "-1"
+            },
+            {
+              "key": "location",
+              "value": "https://jsonplaceholder.typicode.com/posts/101"
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=B0mtoNjF65nVD%2FSbPJhnwsJlJydzOyfoqtNM2tNIn2I%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1789955614\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=B0mtoNjF65nVD%2FSbPJhnwsJlJydzOyfoqtNM2tNIn2I%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1789955614\""
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "vary",
+              "value": "Origin, X-HTTP-Method-Override, Accept-Encoding"
+            },
+            {
+              "key": "via",
+              "value": "2.0 heroku-router"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "1000"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "999"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1789955643"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "a3e56fe0585637a2-IAD"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"title\": \"Aprendiendo APIs\",\n  \"body\": \"Esta publicación fue enviada desde Postman\",\n  \"userId\": 1,\n  \"id\": 101\n}"
+        }
+      ]
+    },
+    {
+      "name": "Actualizar Publicación",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id\": 1,\r\n  \"title\": \"Publicación actualizada\",\r\n  \"body\": \"El contenido fue actualizado utilizando PUT\",\r\n  \"userId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/posts/1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Actualizar Publicación",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": 1,\r\n  \"title\": \"Publicación actualizada\",\r\n  \"body\": \"El contenido fue actualizado utilizando PUT\",\r\n  \"userId\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/posts/1",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "posts",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Mon, 21 Sep 2026 01:55:57 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "key": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"7c-+hu6VePNqoirhT37jzmcEQpzUZo\""
+            },
+            {
+              "key": "expires",
+              "value": "-1"
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=mJj4HT0l%2FxidPVaS3zEuv4uPV6Ma11ZKcXs0MagEMA0%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1789955757\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=mJj4HT0l%2FxidPVaS3zEuv4uPV6Ma11ZKcXs0MagEMA0%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1789955757\""
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "vary",
+              "value": "Origin, Accept-Encoding"
+            },
+            {
+              "key": "via",
+              "value": "2.0 heroku-router"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "1000"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "999"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1789955763"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "content-encoding",
+              "value": "br"
+            },
+            {
+              "key": "cf-ray",
+              "value": "a3e57359fb719a65-IAD"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"id\": 1,\n  \"title\": \"Publicación actualizada\",\n  \"body\": \"El contenido fue actualizado utilizando PUT\",\n  \"userId\": 1\n}"
+        }
+      ]
+    },
+    {
+      "name": "Eliminar Publicación",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/posts/1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Eliminar Publicación",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/posts/1",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "posts",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "date",
+              "value": "Mon, 21 Sep 2026 01:58:06 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "2"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "key": "cache-control",
+              "value": "no-cache"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""
+            },
+            {
+              "key": "expires",
+              "value": "-1"
+            },
+            {
+              "key": "nel",
+              "value": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}"
+            },
+            {
+              "key": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "report-to",
+              "value": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=CtXmtE1ksjMMTTTaRUU9mTu%2B19De6t%2BXdENrytuW9QI%3D\\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\\u0026ts=1789955886\"}],\"max_age\":3600}"
+            },
+            {
+              "key": "reporting-endpoints",
+              "value": "heroku-nel=\"https://nel.heroku.com/reports?s=CtXmtE1ksjMMTTTaRUU9mTu%2B19De6t%2BXdENrytuW9QI%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1789955886\""
+            },
+            {
+              "key": "server",
+              "value": "cloudflare"
+            },
+            {
+              "key": "vary",
+              "value": "Origin, Accept-Encoding"
+            },
+            {
+              "key": "via",
+              "value": "2.0 heroku-router"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "x-ratelimit-limit",
+              "value": "1000"
+            },
+            {
+              "key": "x-ratelimit-remaining",
+              "value": "999"
+            },
+            {
+              "key": "x-ratelimit-reset",
+              "value": "1789955943"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "DYNAMIC"
+            },
+            {
+              "key": "cf-ray",
+              "value": "a3e57680fad39c25-IAD"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=86400"
+            }
+          ],
+          "cookie": [],
+          "body": "{}"
+        }
+      ]
+    }
+  ]
+}
